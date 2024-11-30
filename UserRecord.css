@@ -1,0 +1,52 @@
+.Record {
+	background-color: white;
+	height: 70%;
+	width: 80%;
+	margin-left: 16.5%;
+	box-shadow: 0px 5px 30px;
+	overflow-y: auto;
+	position: absolute;
+	padding: 10px;
+}
+
+#RecordTitleText{
+	position: absolute;
+	margin: 0px;
+	font-size: 23px;
+	color: #003103;
+	font-weight: bold;
+	margin-left: 32%;
+	font-style: italic;
+}
+
+#UserRecord {
+	margin: 1% 1% 1% 1%;
+	border: 1px solid black ;
+	overflow-x: auto;
+	overflow-y: auto;
+	height: 88.4%;
+	font-family: 'Source Sans Pro', sans-serif;
+}#UserRecord, #URNo1, th, tr, td{
+	border: 1px solid black ;
+	text-align: center;
+}#URNumber {
+	width: 3%;
+}
+
+#BackRecord1{
+	margin-left: 13px;
+	width: 250;
+	height: 25px;
+	color: white;
+	background-color: #a70000;
+	border: 1px solid white;
+	cursor: pointer;
+}#BackRecord1:hover{
+	background-color: #003103;
+}#BackRecord1:active{
+	transform: scale(99%);
+}
+
+#RFN, #RMN, #RLN, #RCD, #RInfoD{
+		width: 16.2%;
+	}

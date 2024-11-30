@@ -1,0 +1,174 @@
+.Master {
+	background-color: white;
+	height: 70%;
+	width: 70%;
+	margin-left: 22.5%;
+	box-shadow: 0px 5px 30px;
+	overflow-y: auto;
+	position: absolute;
+	padding: 10px;
+}
+
+.Master table {
+	width: 100%;
+}
+
+#MasterClassTitle{
+	position: absolute;
+	margin: 0px;
+	font-size: 23px;
+	color: #003103;
+	font-weight: bold;
+	margin-left: 26%;
+	font-style: italic;
+}
+
+#UDViewMaster{
+	color: white;
+	background-color: #1288f0;
+	cursor: pointer;
+	width: 10%;
+}#UDViewMaster:hover{
+	border: 1px solid white;
+	transform: scale(96%);
+}#UDViewMaster:active{
+	transform: scale(99%);
+	}
+
+#BackMaster1{
+	width: 250;
+	height: 25px;
+	color: white;
+	background-color: #a70000;
+	border: 1px solid white;
+	cursor: pointer;
+}#BackMaster1:hover{
+	background-color: #003103;
+}#BackMaster1:active{
+	transform: scale(99%);
+}
+
+
+
+
+
+
+
+.MProfile {
+	background-color: white;
+	height: 49%;
+	width: 65%;
+	margin-left: 24.5%;
+	box-shadow: 0px 5px 30px;
+	overflow-y: auto;
+	position: absolute;
+}.MasterButtons{
+	margin-left: 18px;
+	display: inline-flex;
+}.MasterButtons button{
+	margin-left: 3px;
+	margin-top: 5px;
+}#BackMProfile{
+	margin-left: 765px;
+}
+
+.FingerPrintContainer img {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #003103;
+}.FingerPrintContainer {
+	margin: 2% 2% 2% 2%;
+	overflow-x: auto;
+	overflow-y: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	display: inline-flex;
+}.FingerPrintContainer h3, p {
+	margin-left: 40px;
+	margin-top: 30px;
+	font-size: 20px;
+}#StudentsInfo{
+	position: absolute;
+	margin: 0px;
+	font-size: 30px;
+	color: #003103;
+	font-weight: bold;
+	margin-left: 16.1%;
+	margin-top: -7.5%;
+}
+
+
+.MInputContainer {
+	margin-left: 1%;
+	margin-right: 1%;
+	border: 2px solid #003103;
+}.MInputContainer h3, p{
+	margin-left: 15px;
+	font-size: 20px;
+	margin-bottom: 4%;
+}.MasterInputs {
+	margin-left: 14px;
+	display: inline-flex;
+}.MInputContainer p {
+	margin: 0px;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+#SaveMProfile{
+	width: 250;
+	height: 25px;
+	margin: 5px 5px 5px 5px;
+	float: left;
+	color: white;
+	background-color: #003103;
+	border: 1px solid white;
+	cursor: pointer;
+}#SaveMProfile:hover{
+	transform: scale(96%);
+}#SaveMProfile:active{
+	transform: scale(99%);
+}
+
+
+#BackMProfile{
+	width: 250;
+	height: 25px;
+	color: white;
+	background-color: #a70000;
+	border: 1px solid white;
+	cursor: pointer;
+}#BackMProfile:hover{
+	background-color: #003103;
+}#BackMProfile:active{
+	transform: scale(99%);
+}
+
+#EditMProfile{
+	width: 250;
+	height: 25px;
+	color: white;
+	background-color: #1288f0;
+	border: 1px solid white;
+	cursor: pointer;
+}#EditMProfile:hover{
+	background-color: #a70000;
+	transform: scale(96%);
+}#EditMProfile:active{
+	transform: scale(99%);
+}
+
+#CancelMProfile{
+	width: 250;
+	height: 25px;
+	color: white;
+	background-color: #a70000;
+	border: 1px solid white;
+	cursor: pointer;
+}#CancelMProfile:hover{
+	transform: scale(96%);
+}#CancelMProfile:active{
+	transform: scale(99%);
+}

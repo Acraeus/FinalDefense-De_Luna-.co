@@ -1,0 +1,143 @@
+	body {
+		background-image: url(DashboardBG.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		height: 100vh;
+		margin: 0;
+	}
+
+	#RightBar {
+		background-color: #003103;
+		box-shadow: 0px 4px 15px;
+		height: 100%;
+		width: 1.5%;
+		float: right;
+	}
+
+	.leftBAR {
+		background-color: #003103;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		box-shadow: 0px 4px 15px;
+		height: 100%;
+		width: 15.5%;
+		float: left;
+	}
+
+
+
+/* PROFILE KENT SOTTO DE LUNA */
+	#Profile {
+		background-color: white;
+		margin-top: 15%;
+		display: inline-flex;
+		cursor: pointer;
+		border: 2px solid white;
+		padding: 3px;
+		box-shadow: 0 2px 20px;
+		cursor: pointer;
+		transition: transform 0.1 ease;
+	}#Profile:hover {
+		transform: scale(97%);
+	}#Profile:active {
+		transform: scale(99%);
+	}#Profile h1 {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 15px;
+		color: 003103;
+		font-weight: bold;
+		margin-top: 5%;
+		margin-left: 5px;
+		text-align: center;
+	}#Profile img {
+		width: 50px;
+		height: 50px;
+		border-radius: 100px;
+		border: 4px solid #003103;
+	}
+/* END OF PROFILE KENT SOTTO DE LUNA */
+
+
+
+/* LEFT NAVIGATION */
+	#LeftBIMG {
+		margin-top: 25%;
+		width: 125px;
+		height: 125px;
+	}#NavLine {
+		margin-top: 12%;
+		border: 1px solid white;
+		width: 80%;
+	}#Title h1 {
+		color: white;
+		text-align: center;
+		margin-top: 0px;
+		text-shadow: 0px 0px 1px;
+		font-size: 22px;
+		display: inline-block;
+		z-index: 2;
+	}
+
+	.NavigationButtons {
+		margin-top: 20%;
+	}.NavigationButtons button {
+		margin-top: 30px;
+		font-weight: bold;
+		transition: transform 0.1 ease;
+		cursor: pointer;
+	}.NavigationButtons button:hover {
+		transform: scale(97%);
+	}.NavigationButtons button:active {
+		transform: scale(99%);
+	}
+
+	#Bot1 {
+		background-color: #003103;
+		color: white;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 20px;
+		border: 2px solid white;
+		box-shadow: black 0px 2px 5px;
+		height: 40px;
+		width: 150px;
+	}#Bot2 {
+		background-color: #1288f0;
+		color: white;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 20px;
+		border: 2px solid white;
+		box-shadow: black 0px 2px 5px;
+		height: 40px;
+		width: 150px;
+	}
+/* END OF LEFT NAVIGATION */
+
+
+
+/* CENTER WELCOMING TEXT */
+	#WelcomingText {
+		width: 35%;
+		height: 100%;
+		margin-top: 20px;
+		display: inline-flex;
+	}
+/* END OF CENTER WELCOMING TEXT */
+
+
+
+/* DASHBOARD CONTAINER */
+	.DashContainer {
+		background-color: white;
+		height: 70%;
+		width: 70%;
+		margin-top: 5px;
+		margin-left: 22.5%;
+		box-shadow: 0px 5px 30px;
+		display: flex;
+		overflow-y: auto;
+		position: absolute;
+	}
+/* END OF DASHBOARD CONTAINER */

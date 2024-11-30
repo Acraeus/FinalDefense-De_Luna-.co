@@ -1,0 +1,84 @@
+/* USER DATA STARTING */
+
+	#UDClose {
+		margin-top: 1.5px;
+		margin-left: 1.5px;
+		color: white;
+		background-color: #003103;
+		border: 1px solid white;
+		cursor: pointer;
+	}
+
+	#ManageTitle {
+		position: absolute;
+		margin: 0px;
+		margin-top: -2.3%;
+		font-size: 18px;
+		color: #003103;
+		font-weight: bold;
+		margin-left: 3%;
+		font-style: italic;
+}
+
+	#UDClose:hover {
+		background-color: #a70000;
+		transform: scale(96%);
+	}
+
+	#UDClose:active {
+		transform: scale(99%);
+	}
+
+	table {
+		width:1500px;
+	}
+
+	table p, th {
+		font-size: 17px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	#ViewUContainer {
+		margin: 2% 2% 2% 2%;
+		border: 1px solid black ;
+		overflow-x: auto;
+		overflow-y: auto;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	#DataHeader, #UDNo1, th, tr, td{
+		border: 1px solid black ;
+		text-align: center;
+	}
+
+	#UDNumber {
+		width: 3%;
+	}
+
+	#FN, #MN, #LN, #CD, #InfoD{
+		width: 16.2%;
+	}
+
+	#UDViewProfile {
+		color: white;
+		background-color: #1288f0 ;
+	}
+
+	#UDViewRecord {
+		color: white;
+		background-color: #FF0000 ;
+	}
+
+	#UDViewProfile, #UDViewRecord{
+		cursor: pointer;
+	}
+
+	#UDViewProfile:hover, #UDViewRecord:hover{
+		transform: scale(96%);
+	}
+
+	#UDViewProfile:active, #UDViewRecord:active{
+		transform: scale(99%);
+	}
+
+/* USER DATA ENDING */

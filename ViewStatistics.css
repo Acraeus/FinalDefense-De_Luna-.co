@@ -1,0 +1,97 @@
+/* USER DATA STARTING */
+
+	#USClose {
+		margin-top: 1.5px;
+		margin-left: 1.5px;
+		color: white;
+		background-color: #003103;
+		border: 1px solid white;
+		cursor: pointer;
+	}
+	#USClose:hover {
+		background-color: #a70000;
+		transform: scale(96%);
+	}#USClose:active {
+		transform: scale(99%);
+	}
+
+	#StatisticTitle {
+		position: absolute;
+		margin: 0px;
+		margin-top: -2.3%;
+		font-size: 18px;
+		color: #500101;
+		font-weight: bold;
+		margin-left: 3%;
+		font-style: italic;
+	}
+
+	#SNum {
+		width: 3.5%;
+	}
+
+	#ViewSContainer table {
+		width:899px;
+	}
+
+	#ViewSContainer table p, th {
+		font-size: 17px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	#ViewSContainer {
+		margin: 2% 2% 2% 2%;
+		border: 1px solid black ;
+		font-family: 'Source Sans Pro', sans-serif;
+		height: 105%;
+	}
+
+	#StatisticHeader{
+		text-align: center;
+	}
+
+
+	#USViewGraph {
+		color: white;
+		background-color: #1288f0 ;
+		cursor: pointer;
+	}
+
+	#USViewGraph:hover{
+		transform: scale(96%);
+	}
+
+	#USViewGraph:active{
+		transform: scale(99%);
+	}
+
+/* USER DATA ENDING */
+
+
+/* GRAPH */
+#GraphContainer img {
+	z-index: 1;
+	width: 75%;
+	position: absolute;
+	margin-top: -10.5%;
+	margin-left: 4.3%;
+	box-shadow: 0px 5px 12px;
+} #GraphContainer button {
+	z-index: 2;
+	position: absolute;
+	margin-top: -10%;
+	margin-left: 4.5%;
+	color: #500101;
+	font-weight: bold;
+	background-color: white;
+	border: 1px solid white;
+	cursor: pointer;
+	border-radius: 20%;
+} #GraphContainer button:hover{
+	background-color: white;
+	color: #a70000;
+	font-weight: bold;
+	transform: scale(96%);	
+} #GraphContainer button:active{
+	transform: scale(99%);
+}

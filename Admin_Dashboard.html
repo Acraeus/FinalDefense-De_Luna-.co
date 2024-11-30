@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Admin Dashboard </title>
+	<link rel="Admin Icon" type="x-icon" href="Logo_White.png">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="ADashboard.css">
+	<link rel="stylesheet" type="text/css" href="AdminProfile.css">
+	<link rel="stylesheet" type="text/css" href="ViewManage.css">
+	<link rel="stylesheet" type="text/css" href="UserProfile.css">
+	<link rel="stylesheet" type="text/css" href="UserRecord.css">
+	<link rel="stylesheet" type="text/css" href="MastersList.css">
+	<link rel="stylesheet" type="text/css" href="ViewStatistics.css">
+</head>
+
+<body>
+
+
+
+
+<!-- LEFT NAVIGATION BAR -->
+	<div id="LeftNav" class="leftBAR">
+		<div onclick="ViewProfile()" id="Profile">
+			<img src="Profile.jpg">
+			<h1>Kent Sotto De Luna<br>Admin</h1>
+		</div>
+
+		<img id="LeftBIMG" src="Logo_White.png">
+			<div id="Title">
+				<h1>WHERE<br>ATTENDANCE<br>MADE<br>EASIER</h1>
+			</div>
+
+		<div class="NavigationButtons">
+			<center>
+				<button onclick="VUsers()" id="Bot1"> Manage </button>
+					<br>
+				<button onclick="VStatistics()" id="Bot2"> View Statistics </button>
+			</center>
+		</div>
+
+		<hr id="NavLine">
+	</div>
+
+			<div id="RightBar">
+			</div>
+
+	<div id="TitleText">
+		<center>
+			<img id="WelcomingText" src="WelcomingText.png">
+		</center>
+	</div>
+<!-- END OF LEFT NAVIGATION BAR -->
+
+
+
+
+<!-- PROFILE -->
+		<div id="AdminProfile">
+			<div id="AContainer">
+				<img id="WelcomeAdminPic" src="WelcomeAdmin.png">
+			</div>
+			<div id="AContainer2">
+				<center>
+					<img src="Logo_Maroon.png">
+
+						<h3>Clicking the Termination button will securely log you out of your administrator account and end your current session. This ensures that your account remains protected and prevents unauthorized access. After logging out, you will be redirected to the homepage.
+						<br><br>
+						For your security, it’s recommended to log out whenever you finish your 	administrative tasks, especially if you're on a shared or public device.</h3>
+
+					<button onclick="location.href ='MainMenu.html'" id="Terminate"> Terminate Session </button>
+				</center>
+			</div>
+		</div>
+<!-- END PROFILE -->
+
+
+	<!-- DASHBOARD CONTAINER -->
+		<div class="DashContainer">
+
+		<!-- VIEW USERS -->
+			<div id="ViewUContainer">
+		<button id="UDClose" onclick="UDClose()">X</button>
+
+		<h1 id="ManageTitle"> User's Information </h1>
+
+		<!-- START OF TABLE -->
+				<table>
+
+					<tr id="DataHeader" class="Header">
+						<th id="UDNumber">No.</th>
+						<th id="FN">First Name</th>
+						<th id="MN">Middle Name</th>
+						<th id="LN">Last Name</th>
+						<th id="CD">College Department</th>
+						<th id="InfoD">ID</th>
+
+						<th></th>
+						<th></th>
+					</tr>
+
+		<!-- START OF ROW 1 -->
+				<div id="UNo1">
+					<tr id="UDNo1">
+
+					<div id="FirstInfo">
+						<td>1.</td>
+						<td> <p id="UFNo1">Edison</p> </td>
+						<td> <p id="UMNo1">Sotto</p> </td>
+						<td> <p id="ULNo1">Cruz</p> </td>
+						<td> <p id="UCNo1">College of Engineering</p> </td>
+						<td> <p id="UINo1">2089149</p> </td>
+					</div>
+
+						<div class="UserDataButtons">
+							<td onclick="ShowProfile1()" id="UDViewProfile">Profile</td>
+							<td onclick="ShowUserRecords1()" id="UDViewRecord">Records</td>
+						</div>
+
+					</tr>
+				</div>
+				</table>
+			</div>
+		<!-- END VIEW USERS -->
+
+
+
+
+
+			<!-- STATISTICS -->
+<div id="ViewSContainer">
+		<button id="USClose" onclick="USClose()">X</button>
+			<h1 id="StatisticTitle"> System Statistic </h1>
+
+				<table>
+
+					<tr id="StatisticHeader" class="Header">
+						<th id="SNum"></th>
+						<th class="StatHead"><p>Category</p></th>
+						<th class="StatHead"><p>Metric</p></th>
+						<th class="StatHead"><p>Data</p></th>
+					</tr>
+			<!-- STAT 1 -->
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<th> <p id="UFNo1">Total Users and Enrollment Stats</p> </th>
+							<td> <p id="UMNo1">Total number of instructors</p> </td>
+							<td> <p id="ULNo1">1</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Total number of students</p> </td>
+							<td> <p id="ULNo1">11</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Fingerprint enrollments</p> </td>
+							<td> <p id="ULNo1">11</p> </td>
+						</div>
+					</tr>
+				</div>
+			<!-- END STAT 1 -->
+			<!-- STAT 2 -->
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td>2.</td>
+							<th> <p id="UFNo1">User Activity</p> </th>
+							<td> <p id="UMNo1">Active instructors</p> </td>
+							<td> <p id="ULNo1">1</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Active students</p> </td>
+							<td> <p id="ULNo1">11</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Frequent logins</p> </td>
+							<td> <p id="ULNo1">8 - 10 (Daily)</p> </td>
+						</div>
+					</tr>
+				</div>
+			<!-- END STAT 2 -->
+			<!-- STAT 3 -->
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td>3.</td>
+							<th> <p id="UFNo1">Biometric Data Integrity & Security</p> </th>
+							<td> <p id="UMNo1">Fingerprint verification success rate</p> </td>
+							<td> <p id="ULNo1">92%</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Fingerprint verification failure rate</p> </td>
+							<td> <p id="ULNo1">8%</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Suspended accounts</p> </td>
+							<td> <p id="ULNo1">0</p> </td>
+						</div>
+					</tr>
+				</div>
+			<!-- END STAT 3 -->
+			<!-- STAT 4 -->
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td>4.</td>
+							<th> <p id="UFNo1">Performance Metrics</p> </th>
+							<td> <p id="UMNo1">Fingerprint enrollment speed</p> </td>
+							<td> <p id="ULNo1">93-second average</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Attendance logging speed</p> </td>
+							<td> <p id="ULNo1">4-second average</p> </td>
+						</div>
+					</tr>
+				</div>
+			<!-- END STAT 4 -->
+			<!-- STAT 5 -->
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td>5.</td>
+							<th> <p id="UFNo1">Data Security & Integrity</p> </th>
+							<td> <p id="UMNo1">Fingerprint duplication checks</p> </td>
+							<td> <p id="ULNo1">3</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Data access attempts</p> </td>
+							<td> <p id="ULNo1">0</p> </td>
+						</div>
+					</tr>
+				</div>
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th> <p id="UFNo1"></p> </th>
+							<td> <p id="UMNo1">Suspicious account activity</p> </td>
+							<td> <p id="ULNo1">0</p> </td>
+						</div>
+					</tr>
+				</div>
+			<!-- END STAT 5 -->
+			<!-- Graph -->
+				<div id="SNo1">
+					<tr id="SDNo1">
+						<div id="FirstInfo">
+							<td></td>
+							<th><p id="UFNo1"></p> </th>
+								<div class="UserDataButtons">
+									<th></td>
+									<td onclick="ShowGraph()" id="USViewGraph">Generate Graph</td>
+								</div>
+						</div>
+					</tr>
+				</div>
+			<!-- END STAT 5 -->
+			</table>
+</div>
+			<!-- END STATISTICS -->
+		</div>
+
+
+
+
+
+		<!-- END OF DASHBOARD CONTAINER -->
+
+
+
+
+
+		<!-- GRAPH -->
+		<div id="GraphContainer">
+			<button onclick="GraphClose()">Back</button>
+			<img src="Graph.jpg">
+		</div>
+		<!-- GRAPH -->
+
+
+
+
+
+						<!-- VIEW USER PROFILE -->
+			<div class="Profile" id="Profile1">
+				<div class="ProfileButtons">
+					<button onclick="EditProfile1()" id="EditProfile1">Edit</button>
+					<button onclick="CancelEdit1()" id="CancelEdit1">Cancel</button>
+					<button onclick="SaveProfileData1()" id="SaveProfile1">Save</button>
+					<button onclick="RetreatProfile1()" id="BackProfile1"> Back </button>
+				</div>
+			<hr style="width: 95%; border: 1px solid #003103;">
+						<div class="Content">
+						<h1 id="TeachersContext">Instructor' Information</h1>
+							<img src="Profile1.jpg">
+								<h3>First Name:</h3>
+									<p id="ProfileF1">Edison</p>
+								<h3>Middle Name:</h3>
+									<p id="ProfileM1">Sotto</p>
+								<h3>Last Name:</h3>
+									<p id="ProfileL1">Cruz</p>
+						</div>
+
+					<div class="UsersInformation">
+						<input value="Edison" class="UPInfoInput" type="text" id="FNInput1">
+						<input value="Sotto" class="UPInfoInput" type="text" id="MNInput1">
+						<input value="Cruz" class="UPInfoInput" type="text" id="LNInput1">
+
+							<div class="Email">
+								<h3>Email:</h3>
+										<input value="Edison@gmail.com" class="UPInfoInput" type="text" id="EInput1">
+										<p id="Email1">Edison@gmail.com</p>
+							</div>
+
+							<div class="Password">
+								<h3>Password:</h3>
+										<input value="Acraeus12" class="UPInfoInput" type="text" id="PInput1">
+										<p id="Password1">Acraeus12</p>
+							</div>
+
+							<div class="Birth_Date">
+								<h3>Birth Date:</h3>
+										<input value="January 27 1984" class="UPInfoInput" type="text" id="BDInput1">
+										<p id="Birth1">January 27 1984</p>
+							</div>
+
+							<div class="Contact">
+								<h3>Contact Number:</h3>
+										<input value="09531112222" class="UPInfoInput" type="number" id="CInput1">
+										<p id="Contact1">0953 111 2222</p>
+							</div>
+
+							<div class="Department">
+								<h3>Department:</h3>
+										<input value="College of Computer Engineering" class="UPInfoInput" type="text" id="DEInput1">
+										<p id="Department1">College of Engineering</p>
+							</div>
+
+							<div class="Identity_Card">
+								<h3>ID:</h3>
+										<input value="2089149" class="UPInfoInput" type="number" id="IDInput1">
+										<p id="ID1">2089149</p>
+							</div>
+					</div>
+			</div>
+						<!-- END VIEW USER PROFILE -->
+
+
+
+
+
+						<!-- VIEW USER RECORD -->
+			<div class="Record" id="Record1">
+					<h1 id="RecordTitleText">Class List of Mr. Edison Sotto Cruz</h1>
+					<button onclick="RetreatRecord1()" id="BackRecord1">Back</button>
+				<div id="UserRecord">
+					<table>
+
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">Block</th>
+							<th id="RMN">Section Code</th>
+							<th id="RLN">Subject Description</th>
+							<th id="RCD">College Department</th>
+							<th id="RInfoD">Year</th>
+
+							<th></th>
+						</tr>
+
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="RFNo1">A</p> </td>
+							<td> <p id="RMNo1">EE-24</p> </td>
+							<td> <p id="RLNo1">Chemistry 1</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">1st Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass1()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>2.</td>
+							<td> <p id="RFNo2">B</p> </td>
+							<td> <p id="RMNo2">CE-11</p> </td>
+							<td> <p id="RLNo2">Structural Theory</p> </td>
+							<td> <p id="RCNo2">College of Engineering</p> </td>
+							<td> <p id="RINo2">3rd Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass2()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>3.</td>
+							<td> <p id="RFNo1">D</p> </td>
+							<td> <p id="RMNo1">CE-19</p> </td>
+							<td> <p id="RLNo1">Fluid Mechanics</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">3rd Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass3()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>4.</td>
+							<td> <p id="RFNo1">A</p> </td>
+							<td> <p id="RMNo1">ME-12</p> </td>
+							<td> <p id="RLNo1">Thermodynamics</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">3rd Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass4()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>5.</td>
+							<td> <p id="RFNo1">C</p> </td>
+							<td> <p id="RMNo1">ME-7</p> </td>
+							<td> <p id="RLNo1">Machine Design</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">3rd Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass5()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>6.</td>
+							<td> <p id="RFNo1">B</p> </td>
+							<td> <p id="RMNo1">CE-7</p> </td>
+							<td> <p id="RLNo1">Hydraulics</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">2nd Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass6()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>7.</td>
+							<td> <p id="RFNo1">D</p> </td>
+							<td> <p id="RMNo1">EE-17</p> </td>
+							<td> <p id="RLNo1">Microprocessors</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">2nd Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass7()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>8.</td>
+							<td> <p id="RFNo1">E</p> </td>
+							<td> <p id="RMNo1">ME-1</p> </td>
+							<td> <p id="RLNo1">Electrical Circuits</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">4th Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass8()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>9.</td>
+							<td> <p id="RFNo1">B</p> </td>
+							<td> <p id="RMNo1">ME-14</p> </td>
+							<td> <p id="RLNo1">Mathematics</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">4th Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass9()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>10.</td>
+							<td> <p id="RFNo1">C</p> </td>
+							<td> <p id="RMNo1">EE-27</p> </td>
+							<td> <p id="RLNo1">Signal System</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">4th Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass10()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>11.</td>
+							<td> <p id="RFNo1">A</p> </td>
+							<td> <p id="RMNo1">ME-18</p> </td>
+							<td> <p id="RLNo1">Chemistry 1</p> </td>
+							<td> <p id="RCNo1">College of Engineering</p> </td>
+							<td> <p id="RINo1">1st Year</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowClass11()" id="UDViewProfile">View Class</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+			</div>
+						<!-- END VIEW USER RECORD -->
+
+
+
+
+
+						<!-- MASTERS LIST VIEW CLASS -->
+				<div class="Master" id="Master1">
+					<h1 id="MasterClassTitle">Student's Master List: Chemistry 1 EE-24 (1st Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo1">Peter</p> </td>
+							<td> <p id="MRMNo1">Dalope</p> </td>
+							<td> <p id="MRLNo1">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master2">
+					<h1 id="MasterClassTitle">Student's Master List: Structural Theory CE-11 (3rd Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo2">Peter</p> </td>
+							<td> <p id="MRMNo2">Dalope</p> </td>
+							<td> <p id="MRLNo2">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master3">
+					<h1 id="MasterClassTitle">Student's Master List: Fluid Mechanics CE-19 (3rd Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo3">Petter</p> </td>
+							<td> <p id="MRMNo3">Dalope</p> </td>
+							<td> <p id="MRLNo3">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master4">
+					<h1 id="MasterClassTitle">Student's Master List: Thermodynamics ME-12 (3rd Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="MRFNo1">First Name</th>
+							<th id="MRMNo1">Middle Name</th>
+							<th id="MRLNo1">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo4">Peter</p> </td>
+							<td> <p id="MRMNo4">Dalope</p> </td>
+							<td> <p id="MRLNo4">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master5">
+					<h1 id="MasterClassTitle">Student's Master List: Machine Design ME-7 (3rd Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="MRFNo1">First Name</th>
+							<th id="MRMNo1">Middle Name</th>
+							<th id="MRLNo1">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo5">Peter</p> </td>
+							<td> <p id="MRMNo5">Dalope</p> </td>
+							<td> <p id="MRLNo5">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master6">
+					<h1 id="MasterClassTitle">Student's Master List: Hydraulics CE-7 (2nd Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo6">Peter</p> </td>
+							<td> <p id="MRMNo6">Dalope</p> </td>
+							<td> <p id="MRLNo6">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master7">
+					<h1 id="MasterClassTitle">Student's Master List: Microprocessors EE-17 (2nd Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo7">Peter</p> </td>
+							<td> <p id="MRMNo7">Dalope</p> </td>
+							<td> <p id="MRLNo7">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master8">
+					<h1 id="MasterClassTitle">Student's Master List: Electrical Circuits EE-17 (4th Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo8">Peter</p> </td>
+							<td> <p id="MRMNo8">Dalope</p> </td>
+							<td> <p id="MRLNo8">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master9">
+					<h1 id="MasterClassTitle">Student's Master List: Mathematics ME-14 (4th Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo9">Peter</p> </td>
+							<td> <p id="MRMNo9">Dalope</p> </td>
+							<td> <p id="MRLNo9">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master10">
+					<h1 id="MasterClassTitle">Student's Master List: Signal System EE-27 (4th Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo10">Peter</p> </td>
+							<td> <p id="MRMNo10">Dalope</p> </td>
+							<td> <p id="MRLNo10">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+
+				<div class="Master" id="Master11">
+					<h1 id="MasterClassTitle">Student's Master List: Chemistry 1 ME-18 (1st Year)</h1>
+					<button onclick="RetreatMaster1()" id="BackMaster1">Back</button>
+				<div id="UserRecord">
+					<table>
+						<tr id="RecordHeader" class="Header">
+							<th id="URNumber">No.</th>
+							<th id="RFN">First Name</th>
+							<th id="RMN">Middle Name</th>
+							<th id="RLN">Last Name</th>
+
+							<th></th>
+						</tr>
+					<div id="UNo1">
+						<tr id="URNo1">
+						<div id="FirstInfo">
+							<td>1.</td>
+							<td> <p id="MRFNo11">Peter</p> </td>
+							<td> <p id="MRMNo11">Dalope</p> </td>
+							<td> <p id="MRLNo11">Sotto</p> </td>
+						</div>
+							<div class="UserDataButtons">
+								<td onclick="ShowFingerprint()" id="UDViewMaster">Preview Fingerprint</td>
+							</div>
+						</tr>
+					</div>
+					</table>
+				</div>
+				</div>
+						<!-- END MASTERS LIST VIEW CLASS -->
+
+
+
+
+						<!-- PREVIEW FINGERPRINT -->
+				<div class="MProfile" id="MProfile1">
+					<div class="MasterButtons">
+						<button onclick="EditMasterProfile()" id="EditMProfile">Edit</button>
+						<button onclick="CancelMasterEdit()" id="CancelMProfile">Cancel</button>
+						<button onclick="SaveMasterProfileData()" id="SaveMProfile">Save</button>
+						<button onclick="RetreatMasterProfile()" id="BackMProfile"> Back </button>
+					</div>
+								<hr style="width: 95%; border: 1px solid #003103;">
+						<div class="FingerPrintContainer">
+							<h1 id="StudentsInfo">Students Information</h1>
+							<img src="Profile2.jpg">
+								<h3>First Name:</h3>
+									<p id="MProfileF1">Peter</p>
+								<h3>Middle Name:</h3>
+									<p id="MProfileM1">Dalope</p>
+								<h3>Last Name:</h3>
+									<p id="MProfileL1">Sotto</p>
+						</div>
+
+					<div id="MInformation1" class="MInputContainer">
+						<div class="MasterInputs">
+							<input value="Peter" class="UPInfoInput" type="text" id="MFNInput1">
+							<input value="Dalope" class="UPInfoInput" type="text" id="MMNInput1">
+							<input value="Sotto" class="UPInfoInput" type="text" id="MLNInput1">
+						</div>
+						<p>"Warning: Editing information without legal authorization may result in serious legal consequences."</p>
+					</div>
+				</div>
+						<!-- END PREVIEW -->
+
+
+
+
+
+
+
+		<script type="text/javascript">
+
+				// SEE PROFILE
+						let DataProfile1 = document.getElementById("Profile1");
+						DataProfile1.style.display = "none" 
+					function ShowProfile1() {
+						DataProfile1.style.display = "block"
+						document.getElementById("ViewUContainer").style.display = "none"
+					}
+					function RetreatProfile1() {
+						DataProfile1.style.display = "none"
+						document.getElementById("ViewUContainer").style.display = "block"
+					}
+				// END OF SEE PROFILE
+
+				//SEE RECORD
+				document.getElementById("Record1").style.display = "none";
+
+			function ShowUserRecords1(){
+				document.getElementById("ViewUContainer").style.display = "none"
+				document.getElementById("Record1").style.display = "block";
+			}
+
+			function RetreatRecord1(){
+				document.getElementById("Record1").style.display = "none";
+				document.getElementById("ViewUContainer").style.display = "block"
+			}
+				//END SEE RECORD
+
+
+
+			// CLASS LIST
+				document.getElementById("Master1").style.display = "none";
+				document.getElementById("Master2").style.display = "none";
+				document.getElementById("Master3").style.display = "none";
+				document.getElementById("Master4").style.display = "none";
+				document.getElementById("Master5").style.display = "none";
+				document.getElementById("Master6").style.display = "none";
+				document.getElementById("Master7").style.display = "none";
+				document.getElementById("Master8").style.display = "none";
+				document.getElementById("Master9").style.display = "none";
+				document.getElementById("Master10").style.display = "none";
+				document.getElementById("Master11").style.display = "none";
+
+			function ShowClass1(){
+				document.getElementById("Master1").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass2(){
+				document.getElementById("Master2").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass3(){
+				document.getElementById("Master3").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass4(){
+				document.getElementById("Master4").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass5(){
+				document.getElementById("Master5").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass6(){
+				document.getElementById("Master6").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass7(){
+				document.getElementById("Master7").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass8(){
+				document.getElementById("Master8").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass9(){
+				document.getElementById("Master9").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass10(){
+				document.getElementById("Master10").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+			function ShowClass11(){
+				document.getElementById("Master11").style.display = "block";
+				document.getElementById("Record1").style.display = "none";
+			}
+
+			function RetreatMaster1(){
+				document.getElementById("Record1").style.display = "block";
+				document.getElementById("Master1").style.display = "none";
+				document.getElementById("Master2").style.display = "none";
+				document.getElementById("Master3").style.display = "none";
+				document.getElementById("Master4").style.display = "none";
+				document.getElementById("Master5").style.display = "none";
+				document.getElementById("Master6").style.display = "none";
+				document.getElementById("Master7").style.display = "none";
+				document.getElementById("Master8").style.display = "none";
+				document.getElementById("Master9").style.display = "none";
+				document.getElementById("Master10").style.display = "none";
+				document.getElementById("Master11").style.display = "none";
+			}
+				// CLASS LIST
+
+
+
+
+
+				// PREVIEW FINGERPRINT BUTTONS
+				document.getElementById("MProfile1").style.display = "none"
+				document.getElementById("MFNInput1").style.display = "none";
+				document.getElementById("MMNInput1").style.display = "none";
+				document.getElementById("MLNInput1").style.display = "none";
+
+				document.getElementById("CancelMProfile").style.display = "none";
+				document.getElementById("SaveMProfile").style.display = "none";
+
+				function ShowFingerprint(){
+				document.getElementById("MProfile1").style.display = "block"
+				}
+
+				function EditMasterProfile(){
+				document.getElementById("BackMProfile").style.display = "none";
+				document.getElementById("CancelMProfile").style.display = "block";
+				document.getElementById("SaveMProfile").style.display = "block";
+				document.getElementById("BackMProfile").style.marginLeft = "652px";
+				document.getElementById("StudentsInfo").style.display = "none"
+
+				document.getElementById("MProfile1").style.height = "55%"
+
+				document.getElementById("MFNInput1").style.display = "block";
+				document.getElementById("MMNInput1").style.display = "block";
+				document.getElementById("MLNInput1").style.display = "block";
+				}
+
+				function CancelMasterEdit(){
+				document.getElementById("BackMProfile").style.display = "block";
+				document.getElementById("CancelMProfile").style.display = "none";
+				document.getElementById("SaveMProfile").style.display = "none";
+				document.getElementById("BackMProfile").style.marginLeft = "765px";
+				document.getElementById("StudentsInfo").style.display = "block"
+
+				document.getElementById("MProfile1").style.height = "49%"
+
+				document.getElementById("MFNInput1").style.display = "none";
+				document.getElementById("MMNInput1").style.display = "none";
+				document.getElementById("MLNInput1").style.display = "none";
+
+				}
+
+				function SaveMasterProfileData(){
+
+				let MasterFName = document.getElementById("MFNInput1").value;
+				let MasterMName = document.getElementById("MMNInput1").value;
+				let MasterLName = document.getElementById("MLNInput1").value;
+
+				document.getElementById("BackMProfile").style.display = "block"
+				document.getElementById("BackMProfile").style.marginLeft = "765px";
+				document.getElementById("CancelMProfile").style.display = "none";
+				document.getElementById("SaveMProfile").style.display = "none";
+				document.getElementById("StudentsInfo").style.display = "block"
+
+				document.getElementById("MProfile1").style.height = "49%"
+				document.getElementById("MFNInput1").style.display = "none";
+				document.getElementById("MMNInput1").style.display = "none";
+				document.getElementById("MLNInput1").style.display = "none";
+
+				document.getElementById("MProfileF1").innerHTML = MasterFName;
+				document.getElementById("MProfileM1").innerHTML = MasterMName;
+				document.getElementById("MProfileL1").innerHTML = MasterLName;
+
+				document.getElementById("MRFNo1").innerHTML = MasterFName;
+				document.getElementById("MRMNo1").innerHTML = MasterMName;
+				document.getElementById("MRLNo1").innerHTML = MasterLName;
+				document.getElementById("MRFNo2").innerHTML = MasterFName;
+				document.getElementById("MRMNo2").innerHTML = MasterMName;
+				document.getElementById("MRLNo2").innerHTML = MasterLName;
+				document.getElementById("MRFNo3").innerHTML = MasterFName;
+				document.getElementById("MRMNo3").innerHTML = MasterMName;
+				document.getElementById("MRLNo3").innerHTML = MasterLName;
+				document.getElementById("MRFNo4").innerHTML = MasterFName;
+				document.getElementById("MRMNo4").innerHTML = MasterMName;
+				document.getElementById("MRLNo4").innerHTML = MasterLName;
+				document.getElementById("MRFNo5").innerHTML = MasterFName;
+				document.getElementById("MRMNo5").innerHTML = MasterMName;
+				document.getElementById("MRLNo5").innerHTML = MasterLName;
+				document.getElementById("MRFNo6").innerHTML = MasterFName;
+				document.getElementById("MRMNo6").innerHTML = MasterMName;
+				document.getElementById("MRLNo6").innerHTML = MasterLName;
+				document.getElementById("MRFNo7").innerHTML = MasterFName;
+				document.getElementById("MRMNo7").innerHTML = MasterMName;
+				document.getElementById("MRLNo7").innerHTML = MasterLName;
+				document.getElementById("MRFNo8").innerHTML = MasterFName;
+				document.getElementById("MRMNo8").innerHTML = MasterMName;
+				document.getElementById("MRLNo8").innerHTML = MasterLName;
+				document.getElementById("MRFNo9").innerHTML = MasterFName;
+				document.getElementById("MRMNo9").innerHTML = MasterMName;
+				document.getElementById("MRLNo9").innerHTML = MasterLName;
+				document.getElementById("MRFNo10").innerHTML = MasterFName;
+				document.getElementById("MRMNo10").innerHTML = MasterMName;
+				document.getElementById("MRLNo10").innerHTML = MasterLName;
+				document.getElementById("MRFNo11").innerHTML = MasterFName;
+				document.getElementById("MRMNo11").innerHTML = MasterMName;
+				document.getElementById("MRLNo11").innerHTML = MasterLName;
+				}
+
+				function RetreatMasterProfile(){
+				document.getElementById("MProfile1").style.display = "none"
+				document.getElementById("StudentsInfo").style.display = "block"
+				}
+				// END PREVIEW FINGERPRINT BUTTONS
+
+
+
+
+
+			// SET 1
+				// SAVE BUTTON 1
+					// SAVE NUMBER 1
+
+						function SaveProfileData1() {
+						BackProfile1.style.display = "block"
+						Save1.style.display = "none"
+
+						let UserFNO1 = document.getElementById("UFNo1"); // First Name
+						let UserMNo1 = document.getElementById("UMNo1"); // Middle Name
+						let UserLNo1 = document.getElementById("ULNo1"); // Last Name
+						let UserCNo1 = document.getElementById("UCNo1"); // Department
+						let UserINo1 = document.getElementById("UINo1"); // ID
+							
+							let TFirstName1 = document.getElementById("FNInput1").value; // First Name
+							let TMiddleName1 = document.getElementById("MNInput1").value; // Middle Name
+							let TLastName1 = document.getElementById("LNInput1").value; // Last Name
+							let TDepartment1 = document.getElementById("DEInput1").value; // Department
+							let TID1 = document.getElementById("IDInput1").value; // ID
+
+						UserFNO1.innerHTML = TFirstName1;
+						UserMNo1.innerHTML = TMiddleName1
+						UserLNo1.innerHTML = TLastName1
+						UserCNo1.innerHTML = TDepartment1
+						UserINo1.innerHTML = TID1
+
+							// Master's List
+						let ListMaster = document.getElementById("RecordTitleText");
+
+						ListMaster.innerHTML = "Class List of Mr. " + TFirstName1 + " " + TMiddleName1 + " " + TLastName1;
+
+							// End of Master's List
+
+							// INNER PROFILE
+						let IUserFName1 = document.getElementById("ProfileF1");	// First Name
+						let IUserMName1 = document.getElementById("ProfileM1"); // Middle Name
+						let IUserLName1 = document.getElementById("ProfileL1");	// Last Name
+
+						let IUserEmail1 = document.getElementById("Email1"); // Email
+						let IUserPassword1 = document.getElementById("Password1"); // Password
+						let IUserBirth1 = document.getElementById("Birth1"); // Birthdate
+						let IUserContact1 = document.getElementById("Contact1"); // Contact 
+						let IUserDepartment1 = document.getElementById("Department1"); // Department
+						let IUserID1 = document.getElementById("ID1"); //ID
+
+							let IFirstName1 = TFirstName1; // First Name
+							let IMiddleName1 = TMiddleName1; // Middle Name
+							let ILastName1 = TLastName1;; // Last Name
+
+							let IEmail1 = document.getElementById("EInput1").value; // Email
+							let IPassword1 = document.getElementById("PInput1").value; // Password
+							let IBirth1 = document.getElementById("BDInput1").value; // Birthdate
+							let IContact1 = document.getElementById("CInput1").value; // Contact
+							let IDepartment1 = TDepartment1; // Department
+							let IID1 = TID1; // ID
+
+						IUserFName1.innerHTML = IFirstName1;
+						IUserMName1.innerHTML = IMiddleName1;
+						IUserLName1.innerHTML = ILastName1;
+
+						IUserEmail1.innerHTML = IEmail1;
+						IUserPassword1.innerHTML = IPassword1;
+						IUserBirth1.innerHTML = IBirth1;
+						IUserContact1.innerHTML = IContact1;
+						IUserDepartment1.innerHTML = IDepartment1;
+						IUserID1.innerHTML = IID1;
+
+
+							EmailText1.style.display = "block"
+							PasswordText1.style.display = "block"
+							BirthText1.style.display = "block"
+							ContactText1.style.display = "block"
+							DepartmentText1.style.display = "block"
+							IDText1.style.display = "block"
+
+							FNInput1.style.display = "none"	
+							MNInput1.style.display = "none"
+							LNInput1.style.display = "none"
+							EInput1.style.display = "none"
+							PInput1.style.display = "none"
+							BDInput1.style.display = "none"
+							CInput1.style.display = "none"
+							DEInput1.style.display = "none"
+							IDInput1.style.display = "none"
+
+							Cancel1.style.display = "none"
+						}	
+					// END INNER PROFILE
+				// END SAVE BUTTON
+
+
+
+				// EDIT PROFILE BUTTON 
+					//EDIT 1
+						let FNInput1 = document.getElementById("FNInput1");
+						let MNInput1 = document.getElementById("MNInput1");
+						let LNInput1 = document.getElementById("LNInput1");
+						let EInput1 = document.getElementById("EInput1");
+						let PInput1 = document.getElementById("PInput1");
+						let BDInput1 = document.getElementById("BDInput1");
+						let CInput1 = document.getElementById("CInput1");
+						let DEInput1 = document.getElementById("DEInput1");
+						let IDInput1 = document.getElementById("IDInput1");
+
+						let EmailText1 = document.getElementById("Email1");
+						let PasswordText1 = document.getElementById("Password1");
+						let BirthText1 = document.getElementById("Birth1");
+						let ContactText1 = document.getElementById("Contact1");
+						let DepartmentText1 = document.getElementById("Department1");
+						let IDText1 = document.getElementById("ID1");
+
+						let Cancel1 = document.getElementById("CancelEdit1");
+						let BackProfile1 = document.getElementById("BackProfile1");
+						let Save1 = document.getElementById("SaveProfile1");
+
+						FNInput1.style.display = "none"	
+						MNInput1.style.display = "none"
+						LNInput1.style.display = "none"
+						EInput1.style.display = "none"
+						PInput1.style.display = "none"
+						BDInput1.style.display = "none"
+						CInput1.style.display = "none"
+						DEInput1.style.display = "none"
+						IDInput1.style.display = "none"
+
+						Cancel1.style.display = "none"
+						Save1.style.display = "none"
+
+						function EditProfile1() {
+
+						BackProfile1.style.display = "none"
+						Save1.style.display = "block"
+
+						EmailText1.style.display = "none"
+						PasswordText1.style.display = "none"
+						BirthText1.style.display = "none"
+						ContactText1.style.display = "none"
+						DepartmentText1.style.display = "none"
+						IDText1.style.display = "none"
+
+						FNInput1.style.display = "block"	
+						MNInput1.style.display = "block"
+						LNInput1.style.display = "block"
+						EInput1.style.display = "block"
+						PInput1.style.display = "block"
+						BDInput1.style.display = "block"
+						CInput1.style.display = "block"
+						DEInput1.style.display = "block"
+						IDInput1.style.display = "block"
+
+						Cancel1.style.display = "block"
+
+						}
+
+						function CancelEdit1(){
+						Save1.style.display = "none"
+						BackProfile1.style.display = "block"
+
+						EmailText1.style.display = "block"
+						PasswordText1.style.display = "block"
+						BirthText1.style.display = "block"
+						ContactText1.style.display = "block"
+						DepartmentText1.style.display = "block"
+						IDText1.style.display = "block"
+
+						FNInput1.style.display = "none"	
+						MNInput1.style.display = "none"
+						LNInput1.style.display = "none"
+						EInput1.style.display = "none"
+						PInput1.style.display = "none"
+						BDInput1.style.display = "none"
+						CInput1.style.display = "none"
+						DEInput1.style.display = "none"
+						IDInput1.style.display = "none"
+						Cancel1.style.display = "none"
+
+
+						}
+					//END EDIT 1
+				// END EDIT PROFILE BUTTON
+			// END SET 1
+
+
+
+
+
+
+				let UserData = document.getElementById("ViewUContainer");
+				let UserStat = document.getElementById("ViewSContainer");
+				let Profile = document.getElementById("AdminProfile");
+				let Graph = document.getElementById("GraphContainer");
+
+				Graph.style.display = "none";
+				Profile.style.display = "none"
+				UserData.style.display = "none";
+				UserStat.style.display = "none";
+
+			function VUsers() {
+			UserData.style.display = "block";
+			Profile.style.display = "none";
+			UserStat.style.display = "none";
+			Graph.style.display = "none";		
+			document.getElementById("LeftNav").style.backgroundColor = "#003103";	
+			document.getElementById("RightBar").style.backgroundColor = "#003103";	
+
+			document.getElementById("Master1").style.display = "none";
+			document.getElementById("Record1").style.display = "none"; 
+			document.getElementById("Profile1").style.display = "none";
+			document.getElementById("Master1").style.display = "none";
+			document.getElementById("Master2").style.display = "none";
+			document.getElementById("Master3").style.display = "none";
+			document.getElementById("Master4").style.display = "none";
+			document.getElementById("Master5").style.display = "none";
+			document.getElementById("Master6").style.display = "none";
+			document.getElementById("Master7").style.display = "none";
+			document.getElementById("Master8").style.display = "none";
+			document.getElementById("Master9").style.display = "none";
+			document.getElementById("Master10").style.display = "none";
+			document.getElementById("Master11").style.display = "none";
+			}
+
+			function UDClose() {
+			UserData.style.display = "none";
+			UserStat.style.display = "none";
+			}
+
+			function VStatistics() {
+			Profile.style.display = "none";
+			UserStat.style.display = "block";
+			UserData.style.display = "none";
+
+			document.getElementById("Master1").style.display = "none";
+			document.getElementById("Record1").style.display = "none"; 
+			document.getElementById("Profile1").style.display = "none";
+			document.getElementById("Master1").style.display = "none";
+			document.getElementById("Master2").style.display = "none";
+			document.getElementById("Master3").style.display = "none";
+			document.getElementById("Master4").style.display = "none";
+			document.getElementById("Master5").style.display = "none";
+			document.getElementById("Master6").style.display = "none";
+			document.getElementById("Master7").style.display = "none";
+			document.getElementById("Master8").style.display = "none";
+			document.getElementById("Master9").style.display = "none";
+			document.getElementById("Master10").style.display = "none";
+			document.getElementById("Master11").style.display = "none";
+			}
+
+			function USClose() {
+			UserStat.style.display = "none";
+			UserData.style.display = "none";
+			}
+
+
+			// STATISTICS GRAPH
+				function ShowGraph(){
+				Graph.style.display = "block";
+				UserStat.style.display = "none";
+				document.getElementById("LeftNav").style.backgroundColor = "#500101";	
+				document.getElementById("RightBar").style.backgroundColor = "#500101";	
+				}
+
+				function GraphClose(){
+				Graph.style.display = "none";		
+				UserStat.style.display = "block";
+				document.getElementById("LeftNav").style.backgroundColor = "#003103";	
+				document.getElementById("RightBar").style.backgroundColor = "#003103";	
+				}
+			// END STATISTICS GRAPH
+
+			// ADMIN PROFILE 
+				function ViewProfile(){
+				Profile.style.display = "block";
+				Graph.style.display = "none";
+				UserData.style.display = "none";
+				UserStat.style.display = "none";
+
+				document.getElementById("LeftNav").style.backgroundColor = "#003103";	
+				document.getElementById("RightBar").style.backgroundColor = "#003103";	
+				}
+
+		</script>
+</body>
+</html>

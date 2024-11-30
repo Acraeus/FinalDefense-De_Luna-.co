@@ -1,0 +1,151 @@
+.Profile {
+	background-color: white;
+	height: 60%;
+	width: 65%;
+	margin-left: 24.5%;
+	box-shadow: 0px 5px 30px;
+	overflow-y: auto;
+	position: absolute;
+	padding: 0.5%;
+}
+
+.ProfileButtons {
+	display: inline-flex;
+}
+
+#TeachersContext{
+	position: absolute;
+	margin-top: -8%;
+	margin-left: 30%;
+	font-size: 25px;
+	font-weight: bold;
+	color: #003103;
+}
+
+
+
+/* SAVE BUTTON */
+#SaveProfile1, #SaveProfile2{
+	width: 250;	
+	height: 25px;
+	margin: 5px 5px 5px 5px;
+	float: left;
+	color: white;
+	background-color: #003103;
+	border: 1px solid white;
+	cursor: pointer;
+}#SaveProfile1:hover, #SaveProfile2:hover{
+	transform: scale(96%);
+}#SaveProfile1:active, #SaveProfile2:active{
+	transform: scale(99%);
+}
+/* END SAVE BUTTON */
+
+
+
+/* BACK BUTTON */
+#BackProfile1{
+	width: 250;
+	height: 25px;
+	margin: 5px 5px 5px 5px;
+	margin-left: 780%;
+	float: left;
+	color: white;
+	background-color: #a70000;
+	border: 1px solid white;
+	cursor: pointer;
+}#BackProfile1:hover{
+	background-color: #003103;
+}#BackProfile1:active{
+	transform: scale(99%);
+}
+/* END BACK BUTTON */
+
+
+
+/* EDIT BUTTON  */
+#EditProfile1, #EditProfile2 {
+	width: 250;
+	height: 25px;
+	margin: 5px 5px 5px 5px;
+	color: white;
+	background-color: #1288f0;
+	border: 1px solid white;
+	cursor: pointer;
+}#EditProfile1:hover, #EditProfile2:hover {
+	background-color: #a70000;
+	transform: scale(96%);
+}#EditProfile1:active, #EditProfile2:active {
+	transform: scale(99%);
+}
+/* END EDIT BUTTON  */
+
+
+
+/* CANCEL EDIT BUTTON */
+#CancelEdit1, #CancelEdit2 {
+	width: 250;
+	height: 25px;
+	margin: 5px 5px 5px 5px;
+	float: left;
+	color: white;
+	background-color: #a70000;
+	border: 1px solid white;
+	cursor: pointer;
+}#CancelEdit1:hover, #CancelEdit2:hover {
+	transform: scale(96%);
+}#CancelEdit1:active, #CancelEdit2:active {
+	transform: scale(99%);
+}
+/* END CANCEL EDIT BUTTON */
+
+
+
+/* CONTENT */
+.Content img {
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	border: 4px solid #003103;
+}.Content {
+	margin: 2% 2% 2% 2%;
+	overflow-x: auto;
+	overflow-y: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	display: inline-flex;
+}.Content h3, p {
+	margin-left: 50px;
+	font-size: 20px;
+}.Content h3{
+	margin-top: 30px;
+}.Content p{
+	margin-top: 30px;
+}
+/* END OF CONTENT */
+
+
+
+/* USERS INFORMATION & USER INPUT */
+.UsersInformation {
+	margin-left: 1%;
+	margin-right: 1%;
+	border: 2px solid #003103;
+	padding: 1%;
+}.UsersInformation h3, p{
+	margin-left: 15px;
+	font-size: 20px;
+}.UsersInformation h3{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}.UsersInformation p{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.UPInfoInput{
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 250px;
+	height: 25px;
+}
+/* END USERS INFORMATION & USER INPUT */

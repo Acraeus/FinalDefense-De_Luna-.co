@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Boxstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boxstrap -->
+
+	<link rel="Admin Icon" type="x-icon" href="Logo_White.png">
+	<link rel="stylesheet" type="text/css" href="MainCss.css">
+	<title>Admin Login</title>
+</head>
+<body>
+
+
+
+
+<!-- UPPER NAVIGATION -->
+	<div id="UpperTab">
+			<img src="Logo_White.png">
+			<h1>BIOMETRIC ATTENDANCE SYSTEM ADMINISTRATION</h1>
+
+			<div id="Info">
+				<li onclick="ShowGallery()">Gallery</li>
+				<li onclick="ShowMap()">Map</li>
+				<li onclick="ShowAboutUs()">About Us</li>
+				<button onclick="UserInput()" type="button" class="btn btn-default btn-sm">
+				<span class="glyphicon glyphicon-log-in"></span> Log in </button>
+
+			</div>
+	</div>
+
+	<div id="SecondTab">
+		<form class="example">
+  			<input type="text" placeholder="Search.." name="search">
+  			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+<!-- END UPPER NAVIGATION -->
+
+
+
+
+
+<!-- PHOTO SLIDER -->
+
+<button onclick="Left1()" id="SliderButtonL1"><</button>
+<button onclick="Right1()" id="SliderButtonR1">></button>
+
+<button onclick="Left2()" id="SliderButtonL2"><</button>
+<button onclick="Right2()" id="SliderButtonR2">></button>
+
+<button onclick="Left3()" id="SliderButtonL3"><</button>
+<button onclick="Right3()" id="SliderButtonR3">></button>
+
+<button onclick="Left4()" id="SliderButtonL4"><</button>
+<button onclick="Right4()" id="SliderButtonR4">></button>
+
+	<div id="Slider">
+    		<img id="Photo1" src="Slide1.jpg" style="width:100%">
+    		<img id="Photo2" src="Slide2.jpg" style="width:100%">
+    		<img id="Photo3" src="Slide3.jpg" style="width:100%">
+			<img id="Photo4" src="Slide4.jpg" style="width:100%">
+	</div>
+<!-- PHOTO SLIDER -->
+
+
+
+
+
+<!-- GALLERY -->
+	<div id="Gallery">
+		<div class="gallery">
+  			<a target="_blank" href="Gallery1.jpg">
+    		<img src="Gallery1.jpg" alt="Cinque Terre" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery One</div>
+		</div>
+
+		<div class="gallery">
+  			<a target="_blank" href="Gallery2.jpg">
+    		<img src="Gallery2.jpg" alt="Forest" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Two</div>
+		</div>
+
+		<div class="gallery">
+  			<a target="_blank" href="Gallery3.jpg">
+    		<img src="Gallery3.jpg" alt="Northern Lights" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Three</div>
+		</div>
+
+		<div class="gallery">
+  			<a target="_blank" href="Gallery4.jpg">
+    		<img src="Gallery4.jpg" alt="Mountains" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Four</div>
+		</div>
+
+		<div class="gallery">
+  			<a target="_blank" href="Gallery5.jpg">
+    		<img src="Gallery5.jpg" alt="Mountains" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Five</div>
+		</div>
+
+		<div class="gallery">
+  			<a target="_blank" href="Gallery6.jpg">
+    		<img src="Gallery6.jpg" alt="Mountains" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Six</div>
+		</div>
+
+		<div class="gallery">
+  			<a target="_blank" href="Gallery7.jpg">
+    		<img src="Gallery7.jpg" alt="Mountains" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Seven</div>
+		</div>
+
+		<div class="gallery">
+  			<a target="_blank" href="Gallery8.jpg">
+    		<img src="Gallery8.jpg" alt="Mountains" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Eight</div>
+		</div>
+		
+		<div class="gallery">
+  			<a target="_blank" href="Gallery9.jpg">
+    		<img src="Gallery9.jpg" alt="Mountains" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Nine</div>
+		</div>
+
+		<div class="gallery">
+  			<a target="_blank" href="Gallery10.jpg">
+    		<img src="Gallery10.jpg" alt="Mountains" width="600" height="400">
+  			</a>
+  			<div class="desc">Gallery Ten</div>
+		</div>
+
+		<button id="Gallery_Button" onclick="CloseGallery()"> Back </button>
+	</div>
+<!-- END OF GALLERY -->
+
+
+
+
+
+<!-- MAP  -->
+		<button onclick="MapClose()" id="CloseMap">Close Map</button>
+	<div id="Map">
+		<iframe width="500" height="481"
+		src="https://www.youtube.com/embed/nmu7kEzAQus?si=KE8BTtSEWsvzcXrk">
+		</iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15784.619376683444!2d124.6489946517198!3d8.484320930546094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff3376c0f2cb1%3A0x940a9ac2aee772dd!2sSM%20CDO%20Downtown%20Premier!5e0!3m2!1sen!2sph!4v1732638738040!5m2!1sen!2sph" width="500" height="481" style="border:0; position: absolute;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+<!-- END OF MAP  -->
+
+
+
+
+
+<!-- ABOUT US -->
+	<div id="Us">
+		<button id="UsClose" onclick="CloseUs()">Close</button>
+		<div class="UsHalf1"> 
+			<h1>Be Connected Via</h1>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-reddit"></a>
+				<br>
+			<img src="Logo_White.png">
+				<br><br>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+				<br>
+			<p>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+<!-- END OF ABOUT US -->
+
+
+
+
+
+<!-- LOG IN BUTTON -->
+	<div id="UserSign">
+		<center>
+			<div class="Inputs">
+				<input placeholder="Enter Username">
+				<input placeholder="Enter Password">
+				<button id="LogInButton" onclick="location.href='Admin_Dashboard.html'">Log In</button>
+			</div>
+			<p>Forgot Password?</p>
+			<img src="Logo_Maroon.png">
+				<button id="CreateButton"> Create Account</button>
+
+		</center>
+	</div>
+<!-- END OF LOG IN BUTTON -->
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+
+		document.getElementById("Gallery").style.display = "none"
+		document.getElementById("CloseMap").style.display = "none"
+		document.getElementById("Map").style.display = "none"
+		document.getElementById("Us").style.display = "none"
+		document.getElementById("UserSign").style.display = "none"
+
+	function ShowGallery(){
+		document.getElementById("Us").style.display = "none"
+		document.getElementById("CloseMap").style.display = "none"
+		document.getElementById("Map").style.display = "none"
+		document.getElementById("Slider").style.display = "none"
+		document.getElementById("Gallery").style.display = "block"
+		document.getElementById("UserSign").style.display = "none"
+
+		document.body.style.backgroundImage = "url('DashboardBG.png')";
+		document.getElementById("UpperTab").style.backgroundColor = "#003103"
+		document.getElementById("SecondTab").style.display = "block"
+
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonR1").style.display = "none";
+
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+
+		document.getElementById("SliderButtonL4").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+	}
+
+	function CloseGallery() {
+		document.getElementById("Us").style.display = "none"
+		document.getElementById("Slider").style.display = "block"
+		document.getElementById("Gallery").style.display = "none"
+		document.getElementById("CloseMap").style.display = "none"
+		document.getElementById("Map").style.display = "none"
+		document.getElementById("UserSign").style.display = "none"
+
+		document.getElementById("SliderButtonL1").style.display = "block";
+		document.getElementById("SliderButtonR1").style.display = "block";
+
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+
+		document.getElementById("SliderButtonL4").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+	}
+
+	function ShowMap() {
+		document.getElementById("Us").style.display = "none"
+		document.getElementById("Slider").style.display = "none"
+		document.getElementById("Gallery").style.display = "none"
+		document.getElementById("CloseMap").style.display = "block"
+		document.getElementById("Map").style.display = "block"
+		document.getElementById("UserSign").style.display = "none"
+
+		document.body.style.backgroundImage = "url('DashboardBG.png')";
+		document.getElementById("UpperTab").style.backgroundColor = "#003103"
+		document.getElementById("SecondTab").style.display = "block"
+
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonR1").style.display = "none";
+
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+
+		document.getElementById("SliderButtonL4").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+	} 
+
+	function MapClose() {
+		document.getElementById("Us").style.display = "none"
+		document.getElementById("Slider").style.display = "block"
+		document.getElementById("CloseMap").style.display = "none"
+		document.getElementById("Map").style.display = "none"
+		document.getElementById("UserSign").style.display = "none"
+
+		document.getElementById("SliderButtonL1").style.display = "block";
+		document.getElementById("SliderButtonR1").style.display = "block";
+
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+
+		document.getElementById("SliderButtonL4").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+	}
+
+	function ShowAboutUs(){
+		document.getElementById("Us").style.display = "block"
+		document.getElementById("CloseMap").style.display = "none"
+		document.getElementById("Map").style.display = "none"
+		document.getElementById("Slider").style.display = "none"
+		document.getElementById("Gallery").style.display = "none"
+		document.getElementById("UserSign").style.display = "none"
+
+		document.body.style.backgroundImage = "url('DashboardBG.png')";
+		document.getElementById("UpperTab").style.backgroundColor = "#003103"
+		document.getElementById("SecondTab").style.display = "block"
+
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonR1").style.display = "none";
+
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+
+		document.getElementById("SliderButtonL4").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+	}
+
+	function CloseUs() {
+		document.getElementById("Us").style.display = "none"
+		document.getElementById("Slider").style.display = "block"
+
+		document.getElementById("SliderButtonL1").style.display = "block";
+		document.getElementById("SliderButtonR1").style.display = "block";
+
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+
+		document.getElementById("SliderButtonL4").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+	}
+
+
+	function UserInput(){
+		document.body.style.backgroundImage = "url('LoginBG.jpg')";
+		document.getElementById("UpperTab").style.backgroundColor = "#500101"
+		document.getElementById("SecondTab").style.display = "none"
+
+		document.getElementById("Us").style.display = "none"
+		document.getElementById("CloseMap").style.display = "none"
+		document.getElementById("Map").style.display = "none"
+		document.getElementById("Slider").style.display = "none"
+		document.getElementById("Gallery").style.display = "none"
+		document.getElementById("UserSign").style.display = "block"
+
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonR1").style.display = "none";
+
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+
+		document.getElementById("SliderButtonL4").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+
+	}
+
+
+
+	// Start of Sliding Java
+		document.getElementById("SliderButtonL1").style.display = "block";
+		document.getElementById("SliderButtonR1").style.display = "block";
+
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+
+		document.getElementById("SliderButtonL4").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+
+		document.getElementById("Photo1").style.display = "block";
+		document.getElementById("Photo2").style.display = "none";
+		document.getElementById("Photo3").style.display = "none";
+		document.getElementById("Photo4").style.display = "none";
+
+		function Left1(){
+		document.getElementById("SliderButtonR1").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "block";
+
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonL2").style.display = "block";
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonL4").style.display = "none";
+
+		document.getElementById("Photo1").style.display = "none";
+		document.getElementById("Photo2").style.display = "block";
+		document.getElementById("Photo3").style.display = "none";
+		document.getElementById("Photo4").style.display = "none";
+		}
+
+		function Left2(){
+		document.getElementById("SliderButtonR1").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "block";
+		document.getElementById("SliderButtonR4").style.display = "none";
+
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonL3").style.display = "block";
+		document.getElementById("SliderButtonL4").style.display = "none";
+
+		document.getElementById("Photo1").style.display = "none";
+		document.getElementById("Photo2").style.display = "none";
+		document.getElementById("Photo3").style.display = "block";
+		document.getElementById("Photo4").style.display = "none";		
+		}
+
+		function Left3(){
+		document.getElementById("SliderButtonR1").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "block";
+		document.getElementById("SliderButtonR3").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonL4").style.display = "block";
+
+		document.getElementById("Photo1").style.display = "none";
+		document.getElementById("Photo2").style.display = "none";
+		document.getElementById("Photo3").style.display = "none";
+		document.getElementById("Photo4").style.display = "block";						
+		}
+
+		function Left4(){
+		document.getElementById("SliderButtonR1").style.display = "block";
+		document.getElementById("SliderButtonR2").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+
+		document.getElementById("SliderButtonL1").style.display = "block";
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonL4").style.display = "none";
+
+		document.getElementById("Photo1").style.display = "block";
+		document.getElementById("Photo2").style.display = "none";
+		document.getElementById("Photo3").style.display = "none";
+		document.getElementById("Photo4").style.display = "none";	
+		}
+
+		function Right1(){
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonL4").style.display = "block";	
+
+		document.getElementById("SliderButtonR1").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "block";
+		document.getElementById("SliderButtonR3").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+
+		document.getElementById("Photo1").style.display = "none";
+		document.getElementById("Photo2").style.display = "none";
+		document.getElementById("Photo3").style.display = "none";
+		document.getElementById("Photo4").style.display = "block";
+		}
+
+		function Right2(){
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonL3").style.display = "block";
+		document.getElementById("SliderButtonL4").style.display = "none";	
+
+		document.getElementById("SliderButtonR1").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "block";
+		document.getElementById("SliderButtonR4").style.display = "none";
+
+		document.getElementById("Photo1").style.display = "none";
+		document.getElementById("Photo2").style.display = "none";
+		document.getElementById("Photo3").style.display = "block";
+		document.getElementById("Photo4").style.display = "none";
+		}
+
+		function Right3(){
+		document.getElementById("SliderButtonL1").style.display = "none";
+		document.getElementById("SliderButtonL2").style.display = "block";
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonL4").style.display = "none";	
+
+		document.getElementById("SliderButtonR1").style.display = "none";
+		document.getElementById("SliderButtonR2").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "block";
+
+		document.getElementById("Photo1").style.display = "none";
+		document.getElementById("Photo2").style.display = "block";
+		document.getElementById("Photo3").style.display = "none";
+		document.getElementById("Photo4").style.display = "none";
+		}
+
+		function Right4(){
+		document.getElementById("SliderButtonL1").style.display = "block";
+		document.getElementById("SliderButtonL2").style.display = "none";
+		document.getElementById("SliderButtonL3").style.display = "none";
+		document.getElementById("SliderButtonL4").style.display = "none";	
+
+		document.getElementById("SliderButtonR1").style.display = "block";
+		document.getElementById("SliderButtonR2").style.display = "none";
+		document.getElementById("SliderButtonR3").style.display = "none";
+		document.getElementById("SliderButtonR4").style.display = "none";
+
+		document.getElementById("Photo1").style.display = "block";
+		document.getElementById("Photo2").style.display = "none";
+		document.getElementById("Photo3").style.display = "none";
+		document.getElementById("Photo4").style.display = "none";
+		}
+
+	// End of Sliding Java
+
+	</script>
+
+</body>
+</html>

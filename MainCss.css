@@ -1,0 +1,424 @@
+	body {
+		background-image: url(DashboardBG.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		height: 100vh;
+		margin: 0;
+	}
+
+
+
+	#UpperTab {
+		background-color: #003103;
+		width: 100%;
+		height: 7.5%;
+		position: fixed;
+	} #UpperTab img {
+		width: 3%;
+		position: fixed;
+	} #UpperTab h1 {
+		position: fixed;
+		color: white;
+		font-size: 20px;
+		margin-top: 11px;
+		margin-left: 3%;
+		font-weight: bold;
+	}#Info {
+		position: fixed;
+		color: white;
+		display: inline-flex;
+		width: 50%;
+		margin-left: 65%;
+		margin-top: 9px;
+	} #Info li {
+		margin-top: 5px;
+	} #Info li:hover {
+		transform: scale(99%);
+	} #Info li:active {
+		transform: scale(98%);
+	} #Info li, button {
+		list-style-type: none;
+		margin-left: 5%;
+		cursor: pointer;
+	} #Info button {
+		border: 1px solid white;
+		border-style: solid;
+		border-radius: 100px;
+		width: 80px;
+		color: black;
+		background-color: white;
+	} #Info button:hover {
+		color: white;
+		background-color: #003103;
+		transform: scale(97%);
+	} #Info button:active {
+		color: white;
+		background-color: #003103;
+		transform: scale(91%);
+	} 
+
+
+
+	#SecondTab {
+		background-color: white;
+		width: 100%;
+		height: 7.5%;
+		margin-top: 3.5%;
+		position: fixed;
+	} #SecondTab form {
+		margin-top: 5px;
+		margin-left: 70%;
+		height: 30px;
+		width: 100%;
+	}
+
+
+
+/* Search bar */
+	form.example input[type=text] {
+  		padding: 2px;
+  		font-size: 17px;
+  		border: 1px solid grey;
+  		width: 200px;
+  		height: 98%;
+  		background: #f1f1f1;
+  		margin-top: 3px;
+	} form.example button {
+		position: absolute;
+ 		width: 3%;
+ 		height: 28.9px;
+ 		margin-left: 1px;
+  		padding: 1px;
+  		background: #2196F3;
+  		margin-top: 3px;
+  		color: white;
+  		font-size: 20px;
+  		border: 1px solid grey;
+  		cursor: pointer;
+	} form.example button:hover {
+  		background: #0b7dda;
+	}
+
+
+
+/* Photo Slider */
+	#Slider {
+		position: absolute;
+		background-color: white;
+		width: 50%;
+		height: 65%;
+		margin-top: 10%;
+		margin-left: 25%;
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0px 10px 12px;
+	} #SliderButtonR1 {
+		position: absolute;
+		margin-left: 72.3%;
+	} #SliderButtonL1 {
+		position: absolute;
+		margin-left: 25%;
+	} #SliderButtonL1, #SliderButtonR1 {
+		z-index: 1;
+		color: 	#bbbbbb;
+		margin-top: 310px;
+		border-radius: 15%;
+		font-size: 40px;
+		font-weight: bold;
+		border: 1px solid white;
+	} #SliderButtonL1:hover, #SliderButtonR1:hover{
+		transform: scale(97%);
+		opacity: 80%;
+		color: #9a9a9a;
+	} #SliderButtonL1:active, #SliderButtonR1:active{
+		transform: scale(95%);
+	}#SliderButtonR2 {
+		position: absolute;
+		margin-left: 72.3%;
+	} #SliderButtonL2 {
+		position: absolute;
+		margin-left: 25%;
+	} #SliderButtonL2, #SliderButtonR2 {
+		z-index: 1;
+		color: 	#bbbbbb;
+		margin-top: 310px;
+		border-radius: 15%;
+		font-size: 40px;
+		font-weight: bold;
+		border: 1px solid white;
+	} #SliderButtonL2:hover, #SliderButtonR2:hover{
+		transform: scale(97%);
+		opacity: 80%;
+		color: #9a9a9a;
+	} #SliderButtonL2:active, #SliderButtonR2:active{
+		transform: scale(95%);
+	}#SliderButtonR3 {
+		position: absolute;
+		margin-left: 72.3%;
+	} #SliderButtonL3 {
+		position: absolute;
+		margin-left: 25%;
+	} #SliderButtonL3, #SliderButtonR3 {
+		z-index: 1;
+		color: 	#bbbbbb;
+		margin-top: 310px;
+		border-radius: 15%;
+		font-size: 40px;
+		font-weight: bold;
+		border: 1px solid white;
+	} #SliderButtonL3:hover, #SliderButtonR3:hover{
+		transform: scale(97%);
+		opacity: 80%;
+		color: #9a9a9a;
+	} #SliderButtonL3:active, #SliderButtonR3:active{
+		transform: scale(95%);
+	}#SliderButtonR4 {
+		position: absolute;
+		margin-left: 72.3%;
+	} #SliderButtonL4 {
+		position: absolute;
+		margin-left: 25%;
+	} #SliderButtonL4, #SliderButtonR4 {
+		z-index: 1;
+		color: 	#bbbbbb;
+		margin-top: 310px;
+		border-radius: 15%;
+		font-size: 40px;
+		font-weight: bold;
+		border: 1px solid white;
+	} #SliderButtonL4:hover, #SliderButtonR4:hover{
+		transform: scale(97%);
+		opacity: 80%;
+		color: #9a9a9a;
+	} #SliderButtonL4:active, #SliderButtonR4:active{
+		transform: scale(95%);
+	}
+
+
+/* Gallery */
+	#Gallery {
+		position: absolute;
+		background-color: white;
+		width: 70%;
+		height: 75%;
+		margin-top: 9%;
+		margin-left: 15%;
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0px 10px 12px;
+	} div.gallery {
+  		margin: 5px;
+  		border: 1px solid #ccc;
+  		border-radius: 10px;
+  		float: left;
+  		width: 180px;
+	} div.gallery:hover {
+  		border: 1px solid #777;
+	} div.gallery img {
+  		width: 100%;
+  		height: 150px;
+  	} div.desc {
+  		padding: 15px;
+  		text-align: center;
+	} #Gallery_Button {
+		background-color: Maroon;
+		color: white;
+		border: 1px solid #003103;
+		border-radius: 5px;
+		width: 60px;
+		margin-top: 10px;
+		margin-left: 92.5%;
+		cursor: pointer;
+	} #Gallery_Button:hover{
+		transform: scale(97%);
+		background-color: #003103 ;
+	} #Gallery_Button:active{
+		transform: scale(99%);
+	}
+
+
+
+/* Map */
+	#Map {
+		position: absolute;
+		background-color: white;
+		width: 70%;
+		height: 75%;
+		margin-top: 9%;
+		margin-left: 15%;
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0px 10px 12px;
+	} #CloseMap {
+		position: absolute;
+		margin-top: 8.2%;
+		margin-left: 79.5%;
+		z-index: 1;
+		border: 1px solid #003103;
+		border-radius: 15px;
+		background-color: maroon;
+		color: white;
+		cursor: pointer;
+	} #CloseMap:hover {
+		background-color: #003103;
+		transform: scale(97%);
+		border: 2px solid white;
+	} #CloseMap:active {
+		transform: scale(99%);
+	}
+
+
+
+/* About Us */
+	#Us {
+		position: absolute;
+		background-color: #003103;
+		width: 50%;
+		height: 65%;
+		margin-top: 10%;
+		margin-left: 25%;
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0px 10px 12px;
+		padding: 20px;
+	} .UsHalf1 h1{
+		color: white;
+		font-weight: bold;
+	} .UsHalf1 img {
+		position: absolute;
+		margin-left: 62%;
+		width: 150px;
+	}.UsHalf1 p {
+		width: 50%;
+		color: white;
+		text-align: justify;
+	} #Us button {
+		width: 60px;
+		height: 30px;
+		position: absolute;
+		border: 1px solid #003103;
+		border-radius: 15px;
+		background-color: maroon;
+		margin-left: 87%;
+		margin-top: 0px;
+		color: white;
+		cursor: pointer;
+	} #Us button:hover {
+		background-color: #003103;
+		transform: scale(97%);
+		border: 2px solid white;
+	} #Us button:active {
+		transform: scale(99%);
+	}.fa-facebook {
+		background-color: #3B5998;
+		color: white;
+		padding: 15px;
+  		font-size: 30px;
+  		height: auto;
+  		text-align: center;
+  		text-decoration: none;
+  		margin-left: 15px;
+  		margin-top: 10px;
+	} .fa-twitter {
+		background-color: #55ACEE;
+		color: white;
+		padding: 15px;
+  		font-size: 30px;
+  		height: auto;
+  		text-align: center;
+  		text-decoration: none;
+  		margin-left: 15px;
+  		margin-top: 10px;
+	} .fa-youtube {
+		background-color: #bb0000;
+		color: white;
+		padding: 15px;
+  		font-size: 30px;
+  		height: auto;
+  		text-align: center;
+  		text-decoration: none;
+  		margin-left: 15px;
+  		margin-top: 10px;
+	} .fa-reddit {
+		background-color: #ff5700;
+		color: white;
+		padding: 15px;
+  		font-size: 30px;
+  		height: auto;
+  		text-align: center;
+  		text-decoration: none;
+  		margin-left: 15px;
+  		margin-top: 10px;
+	}
+
+
+
+/* User Login */
+	#UserSign {
+		position: absolute;
+		background-color: white;
+		width: 25%;
+		height: 65%;
+		margin-top: 10%;
+		margin-left: 35%;
+		overflow: hidden;
+		border-radius: 12px;
+		box-shadow: black 0px 12px 15px;
+		padding: 15px;
+	}.Inputs {
+		margin-top: 10px;
+		width: 100%;
+	} #UserSign input {
+		width: 100%;
+		height: 50px;
+		border-radius: 12px;
+		margin-bottom: 5px;
+		margin-top: 1px;
+		border: 3px solid #500101;
+	} #LogInButton {
+		background-color: #59ff87;
+		width: 100%;
+		border-radius: 10px;
+		border: solid #59ff87;
+		margin: auto;
+		height: 55px;
+		color: white;
+		font-weight: bold;
+		font-size: 25px;
+		margin-top: 10px;
+		cursor: pointer;
+	} #LogInButton:hover{
+		transform: scale(97%);
+	} #LogInButton:active{
+		transform: scale(99%);
+	} #UserSign p {
+		margin-top: 15px;
+		color: #500101;
+		font-size: 15px;
+		font-style: italic;
+		text-decoration: underline;
+		cursor: pointer;
+	} #UserSign p:hover{
+		transform: scale(97%);
+	} #UserSign p:active{
+		transform: scale(99%);
+	} #UserSign img {
+		width: 100px;
+	} #CreateButton {
+		background-color: #00ffff;
+		width: 80%;
+		border-radius: 10px;
+		border: solid #00ffff;
+		margin: auto;
+		height: 40px;
+		color: white;
+		font-size: 20px;
+		margin-top: 10px;
+		cursor: pointer;
+	} #CreateButton:hover{
+		transform: scale(97%);
+	} #CreateButton:active{
+		transform: scale(99%);
+	}
